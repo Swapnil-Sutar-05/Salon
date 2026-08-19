@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omi's Salon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+
+<header>
+    <nav>
+        <h2>Omi's Salon</h2>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>Welcome to Omi's  Salon</h1>
+    <p>Beauty Begins Here</p>
+
+    <button onclick="bookAppointment()">
+        Book Appointment
+    </button>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card" onclick="togglePrice(this)">
+            <h3>Hair Cut</h3>
+            <p>Professional haircut for men & women.</p>
+            <div class="price">₹300</div>
+        </div>
+
+        <div class="card" onclick="togglePrice(this)">
+            <h3>Hair Spa</h3>
+            <p>Healthy and shiny hair treatment.</p>
+            <div class="price">₹800</div>
+        </div>
+
+        <div class="card" onclick="togglePrice(this)">
+            <h3>Facial</h3>
+            <p>Glow your skin with premium facial.</p>
+            <div class="price">₹1200</div>
+        </div>
+
+        <div class="card" onclick="togglePrice(this)">
+            <h3>Hair Coloring</h3>
+            <p>Trendy colors with expert stylists.</p>
+            <div class="price">₹1500</div>
+        </div>
+
+    </div>
+</section>               
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+
+    <p>
+        Omi's Salon offers premium beauty and hair services with experienced
+        professionals. Our goal is to make every customer look confident and
+        beautiful.
+    </p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <p>📍 Kundalwadi, Maharashtra</p>
+    <p>📞 +91 7821015201</p>
+    <p>✉ omisalon@gmail.com</p>
+</section>
+
+<footer>
+    <p>© 2026 Omi's Salon | All Rights Reserved</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

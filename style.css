@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#fff8f5;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 50px;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=1400");
+    background-size:cover;
+    background-position:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:50px;
+}
+
+.hero p{
+    margin:20px;
+    font-size:22px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    background:#e91e63;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#c2185b;
+}
+
+.services{
+    padding:60px;
+    text-align:center;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card{
+    width:250px;
+    padding:25px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+}
+
+.about,.contact{
+    padding:60px;
+    text-align:center;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.hidden{
+    opacity:0;
+    transform:translateY(50px);
+    transition:all 0.8s ease;
+}
+
+.show{
+    opacity:1;
+    transform:translateY(0);
+}
+.card{
+    width:250px;
+    padding:25px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 0 10px gray;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px) scale(1.05);
+    box-shadow:0 15px 25px rgba(0,0,0,.3);
+}
+.card{
+    width:250px;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+    cursor:pointer;
+    transition:.4s;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.price{
+    margin-top:15px;
+    background:#e91e63;
+    color:white;
+    padding:10px;
+    border-radius:5px;
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    transition:all .5s ease;
+}
+
+.card.active .price{
+    max-height:60px;
+    opacity:1;
+}
